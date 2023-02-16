@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Inter";
+  background-color: #282d35;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1140px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  width: 100px;
+}
+
+nav {
+  background-color: #485dff;
+  color: #fff;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 100px;
+  font-weight: 700;
 }
 
-.App-link {
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav > div > h4 {
+  font-size: 25px;
+}
+
+nav > div > h1 {
+  color: #deebf8;
+}
+
+main {
+  height: 100vh;
+  padding: 57px 27px;
+  color: #deebf8;
+  background-image: url(./logo192.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 15%;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 39px;
+}
+
+.main-facts {
+  margin-top: 46px;
+}
+
+.main-facts > li {
+  padding-block: 10px;
+  line-height: 19px;
+  margin-left: 70px;
+  font-size: 10px;
+}
+
+.main-facts > li::marker {
+  color: #61dafb;
+  font-size: 30px;
 }
